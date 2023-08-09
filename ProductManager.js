@@ -3,6 +3,16 @@ class ProductManager{
         this.products=[]
     }
     addProduct(title, description, price, thumbnail, code, stock){
+        const validarCode = this.products.find(products.code===code);
+        if (validarCode){
+            console.log("ya existe un producto con este code");
+            return
+        }
+
+        if (!title || !description || !price || !thumbnail || !code || !stock){
+            console.log("Favor completar todos los campos")
+            return
+        }
         let nuevoProducto={
         title,
         description,
@@ -18,21 +28,14 @@ class ProductManager{
             nuevoProducto.id=this.products.length+1
         }
 
-        const validarCode = this.products.find(products.code===code);
-        if (validarCode){
-            console.log("ya existe un producto con este code");
-            return
-        }
-
-        if (!title || !description || !price || !thumbnail || !code || !stock){
-            console.log("Favor completar todos los campos")
-            return
-        }
-
         this.products.push(nuevoProducto);
     }
     getProducts(){
         return this.products;
+    }
+    getProductsById(){
+        this.products.find(products.id)
+        return console.log()
     }
 }
 
