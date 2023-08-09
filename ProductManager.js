@@ -28,5 +28,17 @@ class ProductManager{
             console.log("Favor completar todos los campos")
 
         this.products.push(nuevoProducto)
+
+        getProducts(){
+            return this.products
+        }
     }
 }
+
+let pm=new ProductManager();
+
+console.log(pm.getProducts());
+
+pm.addProduct('botella', 'botella 500cc', 1000, "../assets/bottle.jpg", 'AA01', 10)
+
+console.log(pm.getProducts());
