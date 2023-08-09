@@ -39,7 +39,6 @@ class ProductManager{
             return product;
         } else {
             console.log("Product not found");
-            return null;
         }
     }
 }
