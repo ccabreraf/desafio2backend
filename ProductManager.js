@@ -28,10 +28,9 @@ class ProductManager{
             console.log("Favor completar todos los campos")
 
         this.products.push(nuevoProducto);
-
-        getProducts()
-            return this.products;
-        
+    }
+    getProducts(){
+        return this.products;
     }
 }
 
