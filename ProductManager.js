@@ -27,11 +27,11 @@ class ProductManager{
         if (!title || !description || !price || !thumbnail || !code || !stock)
             console.log("Favor completar todos los campos")
 
-        this.products.push(nuevoProducto)
+        this.products.push(nuevoProducto);
 
-        getProducts(){
-            return this.products
-        }
+        getProducts()
+            return this.products;
+        
     }
 }
 
