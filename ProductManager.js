@@ -33,9 +33,9 @@ class ProductManager{
     getProducts(){
         return this.products;
     }
-    getProductsById(){
-        this.products.find(products.id)
-        return console.log()
+    getProductsById(id) {
+        const product = this.products.find(product => product.id === id);
+        return product || null;
     }
 }
 
