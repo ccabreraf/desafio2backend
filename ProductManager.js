@@ -24,8 +24,10 @@ class ProductManager{
             return
         }
 
-        if (!title || !description || !price || !thumbnail || !code || !stock)
+        if (!title || !description || !price || !thumbnail || !code || !stock){
             console.log("Favor completar todos los campos")
+            return
+        }
 
         this.products.push(nuevoProducto);
     }
