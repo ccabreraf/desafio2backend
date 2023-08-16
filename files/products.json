@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "botella",
+    "description": "description botella",
+    "price": 1000,
+    "thumbnail": "direccionimagen1",
+    "code": "AA001",
+    "stock": 100
+  },
+  {
+    "id": 2,
+    "title": "vaso",
+    "description": "description vaso",
+    "price": 2500,
+    "thumbnail": "direccionimagen2",
+    "code": "AA002",
+    "stock": 200
+  },
+  {
+    "id": 3,
+    "title": "nuevotupperware",
+    "description": "nuevadescription tupperware",
+    "price": 3000,
+    "thumbnail": "direccionimagen",
+    "code": "AA007",
+    "stock": 3000
+  }
+]
